@@ -8,8 +8,9 @@ const app = opine()
 const TMP_DIR = '/tmp/hyper'
 
 app.post('/upload', upload('file'), async function (req, res) {
+  console.log('token', req.headers.get('authorization'))
   console.log('file', req.file.filename)
-  const decoder = new TextDecoder()
+  //const decoder = new TextDecoder()
   //console.log(decoder.decode(req.file.content))
 
   res.send({ok: true})
