@@ -1,1 +1,1 @@
-export { serve, json } from 'https://deno.land/x/sift@0.3.0/mod.ts'
+export { opine } from 'https://deno.land/x/opine@1.6.0/mod.ts'
